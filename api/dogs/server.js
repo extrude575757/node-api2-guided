@@ -4,15 +4,16 @@ const server = express();
 
 server.use(express.json());
 
-const AdopterRouter = require('./api/adopters/adopters-router');
+const AdopterRouter = require('../adopters/adopters-router');
 
+const Dog = require('../dogs/dogs-router');
 
 server.use('/api/adopters',AdopterRouter);
 server.use('/api/dogs',DogsRouter);
 
-const Dog = require('./dogs/dogs-model');
 
 // DOGS ENDPOINTS
+// Do WE NEED ANOTHER SERVER HERE AND IT WAS POINTED AS IF THE SERVER CAME FROMT HE ROOT OF THE PROJECT
 
 // OTHER ENDPOINTS
 // OTHER ENDPOINTS
