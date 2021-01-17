@@ -6,7 +6,7 @@ server.use(express.json());
 
 const AdopterRouter = require('../adopters/adopters-router');
 
-const Dog = require('../dogs/dogs-router');
+const Dog = require('./dogs-router');
 
 server.use('/api/adopters',AdopterRouter);
 server.use('/api/dogs',DogsRouter);
